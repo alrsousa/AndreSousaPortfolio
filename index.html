@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Andre Sousa Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+        <link rel="icon" href="./images/CloudIcon.png" type="image/x-icon">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+
+        <!--NAvbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">SlideShow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#LinkedIn">LinkedIn</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Coding_Video">
+                <source src="./images/videos/Title_Vid.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video-Text">
+            <h1 class="white-text">Andre Sousa´s Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>When it comes to performance, commitment, effort, dedication, there is no middle ground.
+                        <br>Either you do something well or you don't.
+                    </q>
+                    <br> -Ayrton Senna da Silva
+                    <br>
+                    <br> My name is André Sousa. Welcome to my portfolio website. On it, I will tell you about my computer background and experience.
+                    <br>
+                    <br> Thank you for your attention!
+                </p>
+            </strong>
+        </div>
+
+        <!--Slideshow section added-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!--Slide 1 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_images" src="images/Personal.jpg" alt="Picture of me">
+                        <div class="text">I would love to help you out on your Projects.</div>
+                    </div>
+                    <!--Slide 2 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_images" src="images/Technologies.png" alt="HTML, CSS, and JavaScript">
+                        <div class="text">I will be a full-stack developer, <br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!--Slide 3 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_images" src="images/Python.png" alt="Python Logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!--Slide 4 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_images" src="images/SQLDatabase.png" alt="SQL Logo">
+                        <div class="text">Professional experience in Relational databases such as SQL Server, Oracle, MySQL.</div>
+                    </div>
+                    <!--Slide 5 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_images" src="images/SAP_Technologies.png" alt="SAP Logo">
+                        <div class="text">More than 10 years as SAP Professional Consultant.</div>
+                    </div>
+	            <!--Slide 6 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_images" src="images/contact-me-button.png" alt="Contact">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                    </div>
+                    <!--Previous and Next buttons-->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!--Slideshow dots-->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--About Section-->
+        <div class="Row" id="About">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="images/Controller.jpg" alt="Xbox Controller">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                     I studied at "UFSCar University", to learn computer programming. I enjoy time with my family, playing video games and watching soccer. Nowadays, I am updating my technoligies knowlodge at Academy of Learning College in Halifax.
+                    <br>
+                    <br>At <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Web Developer Boot Camp, my main course of study. 
+                    I like so much studying ETL, ELT process and data integration using tecnologies such as: Azure, SQL Server SSIS, SAP Data Services, and more.
+                    <br>I have become a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub Section-->
+        <div class="Row" id="GitHub">
+            <!--LEFT COLUMN-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/alrsousa" target="_blank">Andre Sousa GitHub</a></p>
+                </p>
+                <br>
+<!--                <p>
+                    During the last two moweeksf my study I worked on a live project course that gave me real world experience. I wrote a final review of the project that can be viewed here:
+                    <br>
+                    <p class="center"><a href= "https://github.com/dalton704/JobPlacementDashboard" target="_blank">Project Folder</a></p>
+                </p> !-->
+            </div>
+            <!--Right COlumn-->
+            <div class="Column_2">
+                <a href="https://github.com/alrsousa" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!-- Linked In -->
+        <div class="Row" id="LinkedIn">
+            <!--Left Column-->
+            <div class="Column_2">
+                <a href="https://www.linkedin.com/in/alrsousa" target="_blank"><img src="images/linkedin.png" alt="LinkedIn Logo"></a>
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>LinkedIn</h1>
+                <p>
+                    You can view my LinkedIn here: 
+                    <br>
+                    <p class="center"><a href="https://www.linkedin.com/in/alrsousa" target="_blank">Andre Sousa's LinkedIn</a></p>
+                    </p>
+                    <br>
+                    <p>You can also veiw my resume here:
+                    <br>
+                    <p class="center"><a href="https://1drv.ms/b/s!AkO6XqXDPjyGkcp3T_gwK3Ave4PcVQ?e=At2Yji" target="_blank">Resume</a></p>
+                </p>
+            </div>
+        </div>
+
+        <!--Contact form-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/moqygazb" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Type your name here." name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your phone number here." name="phone">
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Type your email address here." name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Type your message here." name="message">
+                    
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Footer Section-->
+        <footer>
+            <p>
+                <p class="center">&copy; Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+            </p>
+        </footer>
+        <script src="JS/JavaScript.js"></script>
+    </body>
+</html>
